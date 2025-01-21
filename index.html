@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>Pokemon Project</h1>
+    <button onclick="stopimg()">Stop</button>
+    <img id="pk" src="pokemon.gif">
+    <button onclick="startimg()">Start</button>
+
+    <script>
+        function stopimg() {
+            let st = document.getElementById("pk").src = "ss1.png" ;
+            document.getElementById("pk").style.height="200px";
+            document.getElementById("pk").style.width="250px";
+        };
+
+        function startimg() {
+            document.getElementById("pk").src = "pokemon.gif";
+        };
+    </script>
+</body>
+
+</html>
